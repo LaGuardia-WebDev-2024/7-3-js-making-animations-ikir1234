@@ -35,6 +35,10 @@ void draw(){
   sunSize = sunSize + 1
   
   x = x + 1
+  if(sunSize > 500){
+sunSize = 30;
+ if(x > 400){x = 10}
+}
 }
 
 //🟡Extra FUN Features Ms. Hall Added
