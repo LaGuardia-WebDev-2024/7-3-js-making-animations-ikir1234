@@ -6,6 +6,8 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var sunSize = 30; 
+var x = 10;
+var innersunSize = 20;
 
 
 //🟢Draw Procedure - Runs on Repeat
@@ -21,18 +23,19 @@ void draw(){
    // The sun, a little circle on the horizon
   fill(255, 204, 0);
   ellipse(200, 298, sunSize, sunSize);
-
+  
   // The land, blocking half of the sun
   fill(76, 168, 67);
   rect(0, 300, 400, 100);
   
   //ladybug
-  fill(200,0,0)
-  ellipse(10, 350, 10, 10)
-
+  fill(200,0,0);
+  ellipse(x, 350, 10, 10);
+  
+  sunSize = sunSize + 1
+  
+  x = x + 1
 }
-
-
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
